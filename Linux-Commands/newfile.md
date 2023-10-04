@@ -6,7 +6,7 @@
 | 1   | [*cat*](#cat)
  
 ### Cat Commands
-```bash
+```
 To type into the terminal
 cat > demofile.txt
 type
