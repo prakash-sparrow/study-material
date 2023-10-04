@@ -3,7 +3,7 @@
 ---
 | No. | Topic                                                                   |
 | --- | ----------------------------------------------------------------------- |
-| 1   | [*cat*]([https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#cat-commands)
+| 1   | [*cat*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#cat-commands)
  
 ### Cat Commands
 ```
