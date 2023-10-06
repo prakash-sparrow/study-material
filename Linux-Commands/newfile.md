@@ -7,18 +7,18 @@
  
 ### Cat Commands
 ```
-To type into the terminal
+To type the content into the terminal
 cat > demofile.txt
 type
 and CTRL + C to quit and save
 
 cat << EOF > anything.txt
-typing anything until EOF
+type the content when you want to end give EOF
 Type EOF to end the and save the file
 
 cat << STOP > demo.txt
-This can be anything in the between borders
-To stop just type STOP
+type the content when you want to end give EOF
+Type EOF to end the and save the file
 
 ```
 
