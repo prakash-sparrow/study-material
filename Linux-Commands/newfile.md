@@ -8,13 +8,13 @@
 ### Cat Commands
 ```
 To type the content into the terminal
-cat > demofile.txt
-type
-and CTRL + C to quit and save
+* cat > demofile.txt
+  type
+  and CTRL + C to quit and save
 
-cat << EOF > anything.txt
-type the content when you want to end give EOF
-Type EOF to end the and save the file
+*cat << EOF > anything.txt
+ type the content when you want to end give EOF
+ Type EOF to end the and save the file
 
 cat << STOP > demo.txt
 type the content when you want to end give EOF
