@@ -20,6 +20,6 @@ $ cat << EOF > anything.txt
 $ cat << STOP > demo.txt
     type the content when you want to end give EOF
     Type EOF to end the and save the file
-
+ 
 ```
 
