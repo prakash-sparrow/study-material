@@ -69,8 +69,10 @@ $ tr A-Z a-z > songs.txt
 ```
 $ ls ..
     Shows the file one folder back
+
 $ ls ../..
     Shows the file two folder back
+
 $ ls -1
     It will show the files in Vertical order
 ```
@@ -80,8 +82,10 @@ $ ls -1
 ```
 $ echo {1..9}
     Prints 1 to 9 numbers
+
 $ echo {a..z}
     Print a to z alphabetical letters
+
 $ echo *.txt
     Result the all text files in current folder 
     Same result as ls *.txt
@@ -92,6 +96,7 @@ $ echo *.txt
 ```
 $ find . -name *.gz -delete
     It deletes the *.gz files
+
 $ find . -type f -name "file[1-9]" -delete
     It deltes the file1 to file9
 
