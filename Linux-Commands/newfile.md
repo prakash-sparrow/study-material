@@ -1,45 +1,26 @@
 # Linux Commands 
 ### Table of Contents
 ---
-| No. | Topic                                                                   |
-| --- | ----------------------------------------------------------------------- |
-| 1   | [*cat*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#cat-commands)
- 
-### Common Linux Commands
-```
-$ cat web.txt | grep .jpg | awk '{print }'|sed 's/.$//' | cut -c 6- > final.txt
+| No. | Topic                                                                                                               | No | Topic
+| --- | -----------------------------------------------------------------------                                             |----| ----------------------------
+| 1   | [*cat*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#cat-commands)         | 16 | [*sort / Uniq*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#sort--uniq-commands)
+| 2   | [*tr*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#tr-commands)           | 17 | [*tar*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#tar-commands)
+| 3   | [*ls*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#ls-commands)           | 18 | [*gzip*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#gzip-commands)
+| 4   | [*echo*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#echo-commands)       | 19 | [*split*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#split-commands)
+| 5   | [*find*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#find-commands)       | 20 | [*export*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#export-commands)
+| 6   | [*python*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#python-commands)   | 21 | [*apropos*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#apropos-commands)
+| 7   | [*sed*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#sed-commands)         | 22 | [*nl*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#nl-commands)
+| 8   | [*cut*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#cut-commmands)        | 23 | [*Bash*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#bash-commands)
+| 9   | [*cal*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#cal-commands)         | 24 | [*shred*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#shred-commands)
+| 10  | [*less*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#less-commands)       | 25 | [*apt*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#apt-commands)
+| 11  | [*nano*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#nano-commands)       | 26 | [*Yt-dlp*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#yt-dlp-coammands)
+| 12  | [*tmux*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#tmux-commands)       | 27 | [*tac*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#tac-commands)
+| 13  | [*curl*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#curl-commands)       | 28 | [*sha256*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#sha256-command)
+| 14  | [*awk*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#awk-commands)         | 29 | [*zip*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#sort--uniq-commands)
+| 15  | [*grep*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#grep-commands)       | 30 | [*common-command*](https://google.com)
 
-$ ls | xargs du -h *
 
-Generating Random number
-$ head 3 /dev/urandom
-$ head 3 /dev/urandom | tr -cd '[:print:]'
-    d -delete
-    c -compliment
-    print - print the character
-    
-man -k .  - It list all the man pages
 
-TO delete the blank unwanted lines in vim
-/g/^$/d
-
-$ sort -k2 -t$'\t' -n filename.txt
-    It will sort the second column of dob
-    the first column has two to three alphabetical names
-    the second has dob it has to sort in numberical order
-    so this commands help to order it
-
-sort -k2 -t$'\t' -n filename.txt
-    Same in Reverse Order
-
-To convert man page to pdf
-Requirements
-	ps2pdf
-	ghostscript
-$ man -t ls | ps2pdf - ls-manual.pdf
-
-```
- 
 
 ### Cat Commands
 ```
@@ -69,10 +50,8 @@ $ tr A-Z a-z > songs.txt
 ```
 $ ls ..
     Shows the file one folder back
-
 $ ls ../..
     Shows the file two folder back
-
 $ ls -1
     It will show the files in Vertical order
 ```
@@ -82,10 +61,8 @@ $ ls -1
 ```
 $ echo {1..9}
     Prints 1 to 9 numbers
-
 $ echo {a..z}
     Print a to z alphabetical letters
-
 $ echo *.txt
     Result the all text files in current folder 
     Same result as ls *.txt
@@ -96,7 +73,6 @@ $ echo *.txt
 ```
 $ find . -name *.gz -delete
     It deletes the *.gz files
-
 $ find . -type f -name "file[1-9]" -delete
     It deltes the file1 to file9
 
@@ -449,7 +425,40 @@ $ zipcloak filename.zip
 It will Encrypt the file with given password
 ```
 
+### Common Linux Commands
+```
+$ cat web.txt | grep .jpg | awk '{print }'|sed 's/.$//' | cut -c 6- > final.txt
 
+$ ls | xargs du -h *
+
+Generating Random number
+$ head 3 /dev/urandom
+$ head 3 /dev/urandom | tr -cd '[:print:]'
+    d -delete
+    c -compliment
+    print - print the character
+    
+man -k .  - It list all the man pages
+
+TO delete the blank unwanted lines in vim
+/g/^$/d
+
+$ sort -k2 -t$'\t' -n filename.txt
+    It will sort the second column of dob
+    the first column has two to three alphabetical names
+    the second has dob it has to sort in numberical order
+    so this commands help to order it
+
+sort -k2 -t$'\t' -n filename.txt
+    Same in Reverse Order
+
+To convert man page to pdf
+Requirements
+	ps2pdf
+	ghostscript
+$ man -t ls | ps2pdf - ls-manual.pdf
+
+```
 
 
 
