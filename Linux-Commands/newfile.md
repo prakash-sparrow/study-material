@@ -17,7 +17,7 @@
 | 12  | [*tmux*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#tmux-commands)       | 27 | [*tac*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#tac-commands)
 | 13  | [*curl*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#curl-commands)       | 28 | [*sha256*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#sha256-command)
 | 14  | [*awk*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#awk-commands)         | 29 | [*zip*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#zip-command)
-| 15  | [*grep*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#grep-commands)       | 30 | [*common-command*]([https://google.com](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#common-linux-commands))
+| 15  | [*grep*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#grep-commands)       | 30 | [*common-command*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/newfile.md#common-linux-commands)
 
 
 
