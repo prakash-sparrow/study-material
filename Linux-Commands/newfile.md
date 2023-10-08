@@ -8,13 +8,41 @@
 ### Common Linux Commands
 ```
 $ cat web.txt | grep .jpg | awk '{print }'|sed 's/.$//' | cut -c 6- > final.txt
+
 $ ls | xargs du -h *
+
+Generating Random number
+$ head 3 /dev/urandom
+$ head 3 /dev/urandom | tr -cd '[:print:]'
+    d -delete
+    c -compliment
+    print - print the character
+    
+man -k .  - It list all the man pages
+
+TO delete the blank unwanted lines in vim
+/g/^$/d
+
+$ sort -k2 -t$'\t' -n filename.txt
+    It will sort the second column of dob
+    the first column has two to three alphabetical names
+    the second has dob it has to sort in numberical order
+    so this commands help to order it
+
+sort -k2 -t$'\t' -n filename.txt
+    Same in Reverse Order
+
+To convert man page to pdf
+Requirements
+	ps2pdf
+	ghostscript
+$ man -t ls | ps2pdf - ls-manual.pdf
+
 ```
  
- 
+
 ### Cat Commands
 ```
-
 $ cat > demofile.txt
     To type the content into the terminal
     type
@@ -27,10 +55,9 @@ $ cat << EOF > anything.txt
 $ cat << STOP > demo.txt
     type the content when you want to end give EOF
     Type EOF to end the and save the file
- 
 ```
 
-### tr Commands
+### Tr Commands
 
 ```
 $ tr A-Z a-z > songs.txt
@@ -44,10 +71,11 @@ $ ls ..
     Shows the file one folder back
 $ ls ../..
     Shows the file two folder back
-
+$ ls -1
+    It will show the files in Vertical order
 ```
 
-### echo Commands
+### Echo Commands
 
 ```
 $ echo {1..9}
@@ -59,39 +87,80 @@ $ echo *.txt
     Same result as ls *.txt
 ```
 
-### find Commands
+### Find Commands
 
 ```
 $ find . -name *.gz -delete
     It deletes the *.gz files
 $ find . -type f -name "file[1-9]" -delete
     It deltes the file1 to file9
+
+SEARCH THE FILES COPY AND MOVE TO ANOTHER FOLDER
+
+find . -type f -name "*.mp4" -exec mv {} /c/users/jp/download/videos \;
+find . -name "*.epub" -exec cp {} ../folder/ \;
 ```
 
-### python Commands
+### Python Commands
 
 ```
 $ python -m http.server 8989
     To start the python server
 ```
 
-### sed Commands
+### Sed Commands
 
 ```
 $ sed 's/..$//'
     THis is for remove last two words
+    
 $ sed 's/.$//'
     This is for remove last one words
-```
+    
+$ sed 's/types/Mubi/g' filename.txt
+    /g for global
+    It will replace types to Mubi in all words
 
+$ sed -i 's/types/Mubi/g' filename.txt
+    It Will Insert the TEXT into the file
+
+$ sed -i 's/Mubi//g' com.txt 
+    It will Search the Mubi and Replace with EMPTY 
+
+$ sed '/Sed/d' com.txt 
+    It will find the word sed and /d for delete and delete it
+
+$ sed '/^$/d' com.txt
+    It will find the empty line and delete it ^ for all $ for nothing
+
+$ sed '1d' file.txt
+    It will delete the first line
+
+$ sed '1,2d' file.txt
+    It will delete the first and Second Line
+
+$ sed 's/\t/ /g' com.txt 
+    It will remove the \t for TAB in text
+    
+$ sed -n 5,6p filename.txt
+    It will grep the 5,6 line in the file
+    
+$ sed 2,3d filename.txt 
+    It will verbose that is it will print opposite to 2,3 line
+    
+$ sed G com.txt 
+    It will give space for every line
+```
 
 ### Cut Commmands
 
 ```
 $ cut -c 6-
-    THis is for remove first 6 character
+    This is for remove first 6 character
+    
 $ cat pratice.txt | cut -c2
     It will print Charcter two  (jason - 'a' will be printed)
+    
 $ cat pratice.txt | cut -c2,3
     It will print character 2,3 (jason - 'as' will be printed)
 
@@ -115,7 +184,6 @@ $ cut -d: -f 6 /etc/passwd	-   List first 6th column separated by:
 $ cut -d: -f 6-7 /etc/passed	-   List first 6 and 7th column separated by:
 
 $ ls -l | cut -c2-4		-   Only print user permisson of files /dir
-
 ```
 
 ### Cal Commands
@@ -123,9 +191,9 @@ $ ls -l | cut -c2-4		-   Only print user permisson of files /dir
 ```
 $ cal -y
     It will shows the current full year
+    
 $ cal 03 2023
     It will shows the particular date, month, year
-
 ```
 
 ### Less Commands
@@ -136,7 +204,6 @@ $ less /var/log/alternatives.log
 Type -S for giving the clarity text
 Move  RIGHT   --> or LEFT  <-- arrow to move
 Type -N for giving the Nummbers to the line
-
 ```
 
 ### Nano Commands
@@ -217,7 +284,6 @@ grep -v them file.txt		-	Display everything except opposite to the keywords
 ls -l | grep Desktop		-	Grep the input
 
 egrep -i "keyword|keyword" demo.txt	- Search for 2 Keywords
-
 ```
 
 ### Sort / Uniq Commands
@@ -237,6 +303,157 @@ sort file | uniq -c		-	Sort first then uniq and list count
 
 sort file | uniq 0d		-	Only show repeated lines
 
+sort -k2 -t$'\t' -n filename.txt
+It will sort the second column of dob
+the first column has two to three alphabetical names
+the second has dob it has to sort in numberical order
+so this commands help to order it
+
+sort -k2 -t$'\t' -n filename.txt
+Same in Reverse Order
 ```
+
+### Tar Commands
+
+```
+tar cvf files.zip .		-	Create  tar file
+
+tar xvf files.zip		-	Extracts tar file
+
+tar tvf files.zip		-	Tables the content of the file
+```
+
+### Gzip Commands
+
+```
+gzip files.txt			-	It will create the file and overwritten
+
+gzip -d files.txt		-	It will extract the files
+```
+
+### Split Commands 
+
+```
+$ cat demo.txt
+    india
+    japan
+    france
+    swiz
+
+$ split -l 2 demo.txt sep
+    ls
+    sepa	sepb
+
+$ cat sepa
+    india 
+    japan
+
+$ cat sepb
+    france 
+    swiz
+```
+
+### Export Commands
+
+```
+$ export PS1="Hello World> "
+    It will output the terminal as
+    Hello World> 
+
+$ export PS1="\u@\h \w> "
+    u - Username
+    h - hostname
+    w - working directory
+LAPTOP5BM@jp /Python >
+```
+
+### Apropos Commands
+
+```
+apropos   -  Search the manuel page and give the names and descriptions
+ex:
+apropos ffmpeg
+apropos zip
+apropos grep
+```
+
+### nl Commands
+
+```
+$ cat names.txt | nl -n 'rz' -w 2
+    Gives the number
+
+$ ls|nl -n'rz' -s"_" -w3
+    List of name the files with numbers
+```
+
+### Bash Commands
+
+```
+TO run the files.txt in terminal
+$ cat command-file
+ls -lah
+
+use
+$ bash command-file
+It will execute in the terminal
+```
+
+### Shred Commands
+
+```
+$ shred -uvz -n 10 filename
+    securely deletes and overwrites the contents of the file difficult to recover
+```
+
+### apt commands
+
+```
+$ apt list --installed
+    To check how many programs installed
+```
+
+### Yt-dlp Coammands
+
+```
+$ yt-dlp --write-sub --write-auto-sub --skip-download "link"
+    To download the Youtube video subtitles Only
+```
+
+### Tac commands
+
+```
+$ tac filename.txt
+    It will reverse the text of the file last to first
+```
+
+### sha256 Command
+
+```
+$ sha256sum clbin.txt
+    It will generate the sha256 uniq code
+```
+### Zip Command
+
+```
+Zip file password create
+
+$ zipcloak filename.zip
+    Enter password:
+    verify password:
+It will Encrypt the file with given password
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
