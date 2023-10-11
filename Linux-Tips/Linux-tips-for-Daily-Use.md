@@ -12,7 +12,7 @@
 
  1 .**Text column**
 
-```bash
+```
   192.168.16.87	LABp34
 [Need to be filter the last part of the ip 87]
 
