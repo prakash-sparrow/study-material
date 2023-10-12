@@ -13,11 +13,10 @@
  1 .**Text column**
 
 ```
-  192.168.16.87	LABp34
+ 192.168.16.87	LABp34
 [Need to be filter the last part of the ip 87]
 
 cut -d "." -f4 new >first
-
 output:
 87	LABp34
 
