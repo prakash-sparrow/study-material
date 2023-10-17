@@ -13,7 +13,8 @@
 | x  | To delete the character
 | dw | To delete the word
 | dd and p |  - simply it acts as copy paste the line dd for which line you want to |
-           || - p for which                line you paste|
+|          | - p for which |
+|	   | - line you paste|
 
 
 ### Insert Mode :
@@ -35,11 +36,11 @@
 | :set nospell | For turn of the spell |
 | :set spell!  | For turn of the spell |
 | :/word/m$	   | It will find the word and move to the last line |
-|:10,43>	   | Indenting the content of lines |
-			   ||(or) It will give the space of 1 TAB before line start
-			   ||Punctuatuion 
-|:ab lol lot of laugh | when you type lol again it will automatically fill the rest of the sentence
-||ctrl + v to stop filling
+|:10,43>	   | - Indenting the content of lines |
+|		   | - (or) It will give the space of 1 TAB before line start |
+|		   | - Punctuatuion |
+|:ab lol lot of laugh | - When you type lol again it will automatically fill the rest of the sentence |
+|		      | - ctrl + v to stop filling |
 | /g/^$/       | To delete a unwanted lines in vim |
 | :g/^\s*$/d   | his removes empty lines and that have zero or more whitespace characters (\s*) |
 
