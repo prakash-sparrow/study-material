@@ -30,7 +30,7 @@
 | ctrl + d |  Move the document down |
 
 ### Command Mode : 
-| Commands  |   Explanation                                                     |
+|Commands  |   Explanation                                                     |
 |-----------|---------------------------------------------------------------------|	
 | :set spell   | For check the spelling in the document |
 | :set nospell | For turn of the spell |
@@ -44,4 +44,12 @@
 | /g/^$/       | To delete a unwanted lines in vim |
 | :g/^\s*$/d   | his removes empty lines and that have zero or more whitespace characters (\s*) |
 
+
+### Visual Mode
+|Commands  |   Explanation                                                     |
+|-----------|---------------------------------------------------------------------|	
+|Ctrl +v  | For entering into visual mode and select the text type d for delete |
+|ctrl +v  | * [Adding double quotes]Select the text like 10j it will select the first text|
+|		  | * For entering command mode|
+|:'<,'>  norm I"demo" | * norm for normal mode I for Insert and the text will appear one selected line|
 
