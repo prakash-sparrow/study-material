@@ -156,7 +156,7 @@ $ cat new1.txt | nl | cut -d'<' -f1
     
 $ cut -c1-3 filename		-   List range of characters
 
-$ cut -c1-3,6-8 filename		-   List specific range of characters
+$ cut -c1-3,6-8 filename	-   List specific range of characters
 
 $ cut -b1-3 filename		-   List by byte size
 
@@ -270,13 +270,13 @@ egrep -i "keyword|keyword" demo.txt	- Search for 2 Keywords
 ### Sort / Uniq Commands
 
 ```
-sort file			    -	Shorts file in alphabetical order
+sort file			-	Shorts file in alphabetical order
 
 sort -r file			-	Short in reverse alphabetical order
 
 sor -k2 file			-	Sort by field number
 
-uniq file			    -	Removes Duplicates
+uniq file			-	Removes Duplicates
 
 sort file | uniq		-	Always sort first before using uniq their line numbers
 
