@@ -20,6 +20,11 @@
 | 15  | [*grep*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#grep-commands)       | 30 | [*common-command*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#common-linux-commands)
 
 
+| No. | Topic                                                                                                               | No | Topic
+| --- | -----------------------------------------------------------------------                                             |----| ----------------------------
+| 1   | [*tee*](link)         												    | 2 | [*command*](link)
+
+
 
 
 ### Cat Commands
@@ -461,6 +466,23 @@ $ man -t ls | ps2pdf - ls-manual.pdf
 ```
 
 
+
+### tee Commands
+```
+$ ls -lah | tee output.txt
+	It will show the output of the command and store the output in the output.txt
+
+$ ls -lah desktop-fi 2>&1 | tee output.txt
+	In this case "desktop-fi" directory is not available
+	It will shows the error, in tee command it store only the output not error
+	in case to store the output + error we need to use 2>&1 
+		Example
+			ls non_existent_directory 2>&1 | tee error_output.txt
+
+$ ls -lah | tee -a output.txt
+	In this case output.txt file is available -a is to append means overwrite the file
+
+```
 
 
 
