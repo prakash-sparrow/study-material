@@ -23,6 +23,7 @@
 | No. | Topic                                                                                                               | No | Topic
 | --- | -----------------------------------------------------------------------                                             |----| ----------------------------
 | 1   | [*tee*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#tee-commands)  | 2 | [*timeout*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#timeout-commands)
+| 3   | [*column*]()													         | 4 | [*command*]()
 
 
 
@@ -500,6 +501,37 @@ $ timeout 30s kill 1234
 	It will kill the process after 30 seconds
 ```
 
+
+### column Commands
+
+```
+$ cat newfile.txt
+01 IRONMAN Avengers
+02 SPider-man Avengers
+03 X-men Wolverine
+
+$ cat newfile.txt | column -t
+01  IRONMAN     Avengers
+02  SPider-man  Avengers
+03  X-men       Wolverine
+
+$ cat newfile.txt | column -t -s " "
+01  IRONMAN     Avengers
+02  SPider-man  Avengers
+03  X-men       Wolverine
+
+$ cat newfile.txt | column -t  -s " " -N "ONE,TWO,THREE"
+ONE  TWO         THREE
+01   IRONMAN     Avengers
+02   SPider-man  Avengers
+03   X-men       Wolverine
+
+$ cat newfile.txt | column -t  -s " " -N "ONE,TWO,THREE" -o "| "
+ONE| TWO       | THREE
+01 | IRONMAN   | Avengers
+02 | SPider-man| Avengers
+03 | X-men     | Wolverine
+```
 
 
 
