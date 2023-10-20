@@ -22,7 +22,7 @@
 
 | No. | Topic                                                                                                               | No | Topic
 | --- | -----------------------------------------------------------------------                                             |----| ----------------------------
-| 1   | [*tee*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#tee-commands)  | 2 | [*timeout*](link)
+| 1   | [*tee*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#tee-commands)  | 2 | [*timeout*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#timeout-commands)
 
 
 
