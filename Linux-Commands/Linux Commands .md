@@ -22,7 +22,7 @@
 
 | No. | Topic                                                                                                               | No | Topic
 | --- | -----------------------------------------------------------------------                                             |----| ----------------------------
-| 1   | [*tee*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#tee-commands)         												    | 2 | [*command*](link)
+| 1   | [*tee*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#tee-commands)  | 2 | [*timeout*](link)
 
 
 
@@ -484,7 +484,21 @@ $ ls -lah | tee -a output.txt
 
 ```
 
+### timeout Commands
 
+```
+$ timeout 5s ping 127.0.0.1
+	It will execute the ping command for 5 seconds and it will automatically exit
+
+$ timeout 60s vim filename.txt
+	It will exit the vim in 60 seconds
+
+$ timeout 2m ./some_script.sh
+	It will execute the script file for 2minutes
+
+$ timeout 30s kill 1234
+	It will kill the process after 30 seconds
+```
 
 
 
