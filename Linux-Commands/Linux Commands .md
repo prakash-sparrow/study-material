@@ -80,7 +80,15 @@ $ echo *.txt
 $ find . -name *.gz -delete
     It deletes the *.gz files
 $ find . -type f -name "file[1-9]" -delete
-    It deltes the file1 to file9
+    It deletes the file1 to file9
+$ find /etc/ -type f 2> /dev/null
+    It will find the files and if some error happend it will ommited
+$ find /etc/ -type f 1> ~/results.txt 2> ~/errors.txt
+    [or]
+$ find /etc/ -type f >results.txt 2> errors.txt
+    It will find the files and result will be save in results.txt if errors occurs that will save in errors.txt
+$ find /etc/ -type f >>results.txt 2>> errors.txt
+    It will find the results and error save in seperate file and >> overwrite the content
 
 SEARCH THE FILES COPY AND MOVE TO ANOTHER FOLDER
 
