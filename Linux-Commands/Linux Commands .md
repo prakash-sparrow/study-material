@@ -100,8 +100,13 @@ $ find /etc/ -type f >>results.txt 2>> errors.txt
 
 SEARCH THE FILES COPY AND MOVE TO ANOTHER FOLDER
 
-find . -type f -name "*.mp4" -exec mv {} /c/users/jp/download/videos \;
-find . -name "*.epub" -exec cp {} ../folder/ \;
+$ find . -type f -name "*.mp4" -exec mv {} /c/users/jp/download/videos \;
+$ find . -name "*.epub" -exec cp {} ../folder/ \;
+
+REMOVING FILES 
+$ find /home/foo -type f -name "*.txt" -exec rm {} \;
+    remove all the files that has .txt
+
 ```
 
 ### Python Commands
