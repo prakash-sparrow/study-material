@@ -56,8 +56,10 @@ $ tr A-Z a-z > songs.txt
 ```
 $ ls ..
     Shows the file one folder back
+
 $ ls ../..
     Shows the file two folder back
+
 $ ls -1
     It will show the files in Vertical order
 ```
@@ -67,8 +69,10 @@ $ ls -1
 ```
 $ echo {1..9}
     Prints 1 to 9 numbers
+
 $ echo {a..z}
     Print a to z alphabetical letters
+
 $ echo *.txt
     Result the all text files in current folder 
     Same result as ls *.txt
@@ -79,14 +83,18 @@ $ echo *.txt
 ```
 $ find . -name *.gz -delete
     It deletes the *.gz files
+
 $ find . -type f -name "file[1-9]" -delete
     It deletes the file1 to file9
+
 $ find /etc/ -type f 2> /dev/null
     It will find the files and if some error happend it will ommited
+
 $ find /etc/ -type f 1> ~/results.txt 2> ~/errors.txt
     [or]
 $ find /etc/ -type f >results.txt 2> errors.txt
     It will find the files and result will be save in results.txt if errors occurs that will save in errors.txt
+
 $ find /etc/ -type f >>results.txt 2>> errors.txt
     It will find the results and error save in seperate file and >> overwrite the content
 
