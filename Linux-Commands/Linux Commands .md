@@ -23,7 +23,7 @@
 | No. | Topic                                                                                                               | No | Topic
 | --- | -----------------------------------------------------------------------                                             |----| ----------------------------
 | 1   | [*tee*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#tee-commands)  | 2 | [*timeout*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#timeout-commands)
-| 3   | [*column*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#column-commands)  | 4 | [*command*]()
+| 3   | [*column*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#column-commands)  | 4 | [*shuf*]()
 
 
 
@@ -555,9 +555,20 @@ ONE| TWO       | THREE
 03 | X-men     | Wolverine
 ```
 
+### shuf Commands
+```
+$ seq 10 | shuf
+	It will shuffle and give random numbers
 
+$ seq 10 | shuf -n 1
+	Generate 1 random number from 1 to 10
 
+$ seq 10 > test.txt
+	shuf test.txt -o shuffled-numbers.txt
+	Generate 10 random number and shuffled the output to text file
 
-
-
-
+$ shuf -n 3 -i 1-10 --repeat
+	[or]
+$ shuf -n 3 -i 1-10
+	It will shuffle the number from 1 to 10 and gives the 3 numbers shuffled
+```
