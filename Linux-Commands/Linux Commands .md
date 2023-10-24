@@ -24,7 +24,7 @@
 | --- | -----------------------------------------------------------------------                                             |----| ----------------------------
 | 1   | [*tee*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#tee-commands)  | 2 | [*timeout*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#timeout-commands)
 | 3   | [*column*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#column-commands)  | 4 | [*shuf*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#shuf-commands)
-| 5   | [*xargs*]()														  | 6 | [*command*]()
+| 5   | [*xargs*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#xargs-commands)	  | 6 | [*command*]()
 
 
 
@@ -579,5 +579,25 @@ $ shuf -n 3 -i 1-10
 
 ### xargs Commands
 ```
+$ ls |xargs  ls
+	It will list the content and xargs with ls will ls the list of content
+	for every output like ls -R
+
+$ cut -d: -f1 < /etc/passwd | sort | xargs
+	It will cut the first field 
+
+$ ls | xargs -I {} echo "/home/files/{}"
+	[or]
+$ ls | xargs -I xxxxx echo "/home/files/xxxxx"
+	It will add the text /home/files/{ls files will be included here}
+
+$ seq 1000- | xargs -I {} touch {}.txt
+	This command create 1000 files named 1.txt 2.txt upto 1000.txt
+
+$ ls | cut -d. -f1 | xargs -I {} mv {}.txt {}.text
+	It will cut the first field of the listed names and move the .txt extension to .text extension
+
+$ find /home/foo -type f -name "*.txt" | xargs rm
+	This command find the .txt files in the particular directory and removes the files 
 
 ```
