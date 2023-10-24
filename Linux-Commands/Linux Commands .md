@@ -24,7 +24,7 @@
 | --- | -----------------------------------------------------------------------                                             |----| ----------------------------
 | 1   | [*tee*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#tee-commands)  | 2 | [*timeout*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#timeout-commands)
 | 3   | [*column*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#column-commands)  | 4 | [*shuf*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#shuf-commands)
-| 5   | [*command*]()														  | 6 | [*command*]()
+| 5   | [*xargs*]()														  | 6 | [*command*]()
 
 
 
@@ -575,4 +575,9 @@ $ shuf -n 3 -i 1-10 --repeat
 	[or]
 $ shuf -n 3 -i 1-10
 	It will shuffle the number from 1 to 10 and gives the 3 numbers shuffled
+```
+
+### xargs Commands
+```
+
 ```
