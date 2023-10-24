@@ -300,6 +300,10 @@ egrep -i "keyword|keyword" demo.txt	- Search for 2 Keywords
 ```
 sort file			-	Shorts file in alphabetical order
 
+sort -n shuffled-numbers.txt    - 	It will arrange the shuffled number
+	
+sort -R .bashrc		        - 	randomly arrange the lines
+
 sort -r file			-	Short in reverse alphabetical order
 
 sor -k2 file			-	Sort by field number
