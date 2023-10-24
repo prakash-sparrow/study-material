@@ -591,7 +591,7 @@ $ ls | xargs -I {} echo "/home/files/{}"
 $ ls | xargs -I xxxxx echo "/home/files/xxxxx"
 	It will add the text /home/files/{ls files will be included here}
 
-$ seq 1000- | xargs -I {} touch {}.txt
+$ seq 1000 | xargs -I {} touch {}.txt
 	This command create 1000 files named 1.txt 2.txt upto 1000.txt
 
 $ ls | cut -d. -f1 | xargs -I {} mv {}.txt {}.text
