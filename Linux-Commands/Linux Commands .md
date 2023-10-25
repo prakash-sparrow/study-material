@@ -166,7 +166,13 @@ $ sed G com.txt
 ```
 $ cut -c 6-
     This is for remove first 6 character
-    
+
+$ echo "This is a line" | cut -c 1-10
+    Displays First 10 charcter 
+
+$ cut -d ' ' -f5
+    Grab the 5th field
+
 $ cat pratice.txt | cut -c2
     It will print Charcter two  (jason - 'a' will be printed)
     
