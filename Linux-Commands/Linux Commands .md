@@ -49,6 +49,19 @@ $ cat << STOP > demo.txt
 ```
 $ tr A-Z a-z > songs.txt
     Convert a file to all lower-case
+
+$ echo "The demo line" | tr 'm' 'M'
+    Replaced smaller case 'm' to 'M'
+
+$ echo "The demo line" | tr -d 'aeiou'
+    Deletes the aeiou letter from the sentence
+
+$ echo "The demo line" | tr -s '[:lower:]' '[:upper:]'
+    It translates lower case to upper case
+
+$ echo "THe Phonenumber is - 123456789" | tr -cd '[:digit:]'
+    It extracts the digit from the text file
+
 ```
 
 ### ls Commands
