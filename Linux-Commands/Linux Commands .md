@@ -212,6 +212,11 @@ $ cut -d: -f 6 /etc/passwd	-   List first 6th column separated by:
 $ cut -d: -f 6-7 /etc/passed	-   List first 6 and 7th column separated by:
 
 $ ls -l | cut -c2-4		-   Only print user permisson of files /dir
+
+cut : will do the field calculation
+awk : will do the column calculation
+
+
 ```
 
 ### Cal Commands
@@ -296,6 +301,11 @@ $ ls -l | awk '{if($9 == "sein") print  $0;}
 
 $ ls -l | awk '{print NF}'
     Number of fields
+
+cut : cut will do the field calculation
+awk : awk will do the column calculation
+
+
 ```
 
 ### Grep Commands
