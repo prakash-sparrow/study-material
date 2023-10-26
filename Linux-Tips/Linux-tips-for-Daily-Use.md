@@ -42,3 +42,35 @@ awk '{$4 = $4 ".a2d"; print}' input.txt > output.txt
 [It shows the output correctly]
   ```
 ---
+2. **Extracting a images from pdf and converting into a video**
+
+Install the necessary
+```
+sudo apt-get install poppler-utils
+```
+```
+sudo apt install ffmpeg
+```
+```
+pdftoppm -f 1 -l 50 demo.pdf page
+```
+It Extracts the page from 1 to 50
+
+```
+mogrify -format png page-*.ppm
+```
+Converts the ppm files to png extension
+
+```
+rm *.ppm
+```
+After converting to png format remove ppm files
+
+```
+ffmpeg -framerate 1/3 -pattern_type glob -i '*.png' -vf "scale=1242:1754" -c:v libx264 -r 30 -pix_fmt yuv420p output.mp4
+```
+Converting png images to video with 3 seconds delay
+
+---
+
+
