@@ -51,25 +51,27 @@ sudo apt-get install poppler-utils
 ```
 sudo apt install ffmpeg
 ```
+
+It Extracts the page from 1 to 50
 ```
 pdftoppm -f 1 -l 50 demo.pdf page
 ```
-It Extracts the page from 1 to 50
 
+Converts the ppm files to png extension
 ```
 mogrify -format png page-*.ppm
 ```
-Converts the ppm files to png extension
 
+After converting to png format remove ppm files
 ```
 rm *.ppm
 ```
-After converting to png format remove ppm files
 
+Converting png images to video with 3 seconds delay
 ```
 ffmpeg -framerate 1/3 -pattern_type glob -i '*.png' -vf "scale=1242:1754" -c:v libx264 -r 30 -pix_fmt yuv420p output.mp4
 ```
-Converting png images to video with 3 seconds delay
+
 
 ---
 
