@@ -40,6 +40,5 @@ Atlast i want to add the .a2d to the last column of the last line
 awk '{$4 = $4 ".a2d"; print}' input.txt > output.txt
 
 [It shows the output correctly]
-
-
-   ```
+  ```
+---
