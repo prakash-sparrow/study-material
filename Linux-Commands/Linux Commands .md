@@ -319,6 +319,26 @@ grep -n the file.txt		-	Display the matched lines and their line numbers
 
 grep -v them file.txt		-	Display everything except opposite to the keywords
 
+grep the .bashrc		-	Pattern of the ouput
+
+grep -w the .bashrc 		-	Only the word
+
+grep ksh ./*			-	Search the entire directory
+
+grep clear .* --exclude-dir={Directory,Notes} - It will exclude the Given directory
+
+grep [aeiou] .bashrc 		-	Search the words that in []
+
+grep ^if .kshrc			-	THe pattern that start from ^if it will filter
+
+grep -A 3 -i if .kshrc		-	Search the line and gives the After the 3 line 
+
+grep -B 3 -i if .kshrc		-	Search the line and gives the Before the 3 line 
+
+grep -C 3 -i if .kshrc		-	Search the line and gives the Before and After the 3 line 
+
+grep -Hn the .kshrc		-	filename : number: lines with colored word
+
 ls -l | grep Desktop		-	Grep the input
 
 egrep -i "keyword|keyword" demo.txt	- Search for 2 Keywords
