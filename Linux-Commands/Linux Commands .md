@@ -97,6 +97,24 @@ $ echo *.txt
 $ find . -name *.gz -delete
     It deletes the *.gz files
 
+$ find . -name "*.txt"
+    It find the *.txt files
+
+$ find . -type d -iname notes 
+    It find the directory type of files
+
+$ find -type f -perm 0777 -print
+    Searching the files with 0777 permission and print it to the screen
+
+$ find -type f ! -perm 0777 -print
+    Searching the files with Not 0777 permission and print it to the screen
+
+$ find . -iname "Linux"
+    Finding the name with incase sensitive
+
+$ find . -size +500k -size -10M
+    Finds the size between 500kb to 10Mb
+
 $ find . -type f -name "file[1-9]" -delete
     It deletes the file1 to file9
 
