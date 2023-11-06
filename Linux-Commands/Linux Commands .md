@@ -24,7 +24,7 @@
 | --- | -----------------------------------------------------------------------                                             |----| ----------------------------
 | 1   | [*tee*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#tee-commands)  | 2 | [*timeout*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#timeout-commands)
 | 3   | [*column*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#column-commands)  | 4 | [*shuf*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#shuf-commands)
-| 5   | [*xargs*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#xargs-commands)	  | 6 | [*command*]()
+| 5   | [*xargs*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#xargs-commands)	  | 6 | [*rm*]()
 
 
 
@@ -667,4 +667,12 @@ $ ls | cut -d. -f1 | xargs -I {} mv {}.txt {}.text
 $ find /home/foo -type f -name "*.txt" | xargs rm
 	This command find the .txt files in the particular directory and removes the files 
 
+```
+### rm Commands 
+```
+$ rm -rf demo?.txt
+	The files contains file from demo1 to demo9 would be deleted
+
+$ rm -r file??.txt
+	The remaining demo10 to 99 would be deleted
 ```
