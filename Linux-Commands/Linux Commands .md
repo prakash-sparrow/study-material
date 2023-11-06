@@ -25,7 +25,7 @@
 | 1   | [*tee*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#tee-commands)  | 2 | [*timeout*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#timeout-commands)
 | 3   | [*column*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#column-commands)  | 4 | [*shuf*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#shuf-commands)
 | 5   | [*xargs*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#xargs-commands)	  | 6 | [*rm*](https://github.com/prakash-sparrow/study-material/blob/main/Linux-Commands/Linux%20Commands%20.md#rm-commands)
-
+| 7   | [*caret*]()
 
 
 ### Cat Commands
@@ -675,4 +675,14 @@ $ rm -rf demo?.txt
 
 $ rm -r file??.txt
 	The remaining demo10 to 99 would be deleted
+```
+
+### caret Commands
+```
+$ echo "demo character"
+demo character
+
+$ ^demo^file
+echo "file character"
+file character
 ```
