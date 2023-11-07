@@ -43,6 +43,9 @@
 |		      | - ctrl + v to stop filling |
 | /g/^$/       | To delete a unwanted lines in vim |
 | :g/^\s*$/d   | his removes empty lines and that have zero or more whitespace characters (\s*) |
+|:read !date | It will apply the date command |It will place the date text in 12th line |
+| :12read !date | It will place the date text in 12th line |
+| :$read !ls    | It will list the files names in last line |
 
 
 ### Visual Mode
