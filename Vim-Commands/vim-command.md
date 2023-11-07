@@ -46,6 +46,8 @@
 |:read !date | It will apply the date command |It will place the date text in 12th line |
 | :12read !date | It will place the date text in 12th line |
 | :$read !ls    | It will list the files names in last line |
+| :%s/onefile/secondfile/g | It will replace teh 'onefile' text to 'secondfile' globally |
+| :10,20s/991/500/g | It will repalce the 991 to 500 from line number 10 to 20 |
 
 
 ### Visual Mode
