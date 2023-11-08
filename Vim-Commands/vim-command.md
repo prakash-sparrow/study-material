@@ -15,6 +15,14 @@
 | dd and p |  - simply it acts as copy paste the line dd for which line you want to |
 |          | - p for which |
 |	   | - line you paste|
+|:g/import/d | It deletes the line of contains import |
+|:g!/import/d | It deltes the line which does not conatin import |
+|:g/^/pu = \"\n\" | GIves the one empty line for the document|
+| :g/^\s*$/d |  It deletes the empty lines in the document |
+| :g/TWO/t$ | Every line which contains word "TWO" copy those line to last lines |
+| :g/TWO/m$ | Every lien which contains word "TWO" that will be moved to last lines |
+| :g/^/m0 | It will reverse the document |
+
 
 
 ### Insert Mode :
