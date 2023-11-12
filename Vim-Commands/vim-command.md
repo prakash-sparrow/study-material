@@ -22,6 +22,7 @@
 | :g/TWO/t$ | Every line which contains word "TWO" copy those line to last lines |
 | :g/TWO/m$ | Every lien which contains word "TWO" that will be moved to last lines |
 | :g/^/m0 | It will reverse the document |
+| Ctrl + o o | Opens recently closed file or recently opened file|
 
 
 
